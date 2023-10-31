@@ -488,6 +488,282 @@ view: covid19_open_data {
     type: number
     sql: ${TABLE}.facial_coverings ;;
   }
+
+  measure: sum_drill_measure_1 {
+    type: sum
+    sql:  ${facial_coverings} ;;
+      link: {
+        label: "Account Level"
+        url: "@{drill_1}"
+      }
+      link: {
+        label: "Coverage level"
+        url: "@{drill_1}"
+      }
+      link: {
+        label: "Policy Level"
+        url: "@{drill_1}"
+      }
+  }
+  measure: sum_drill_measure_2 {
+    type: sum
+    sql:  ${facial_coverings} ;;
+    link: {
+      label: "Account Level"
+      url: "@{drill_1}"
+    }
+    link: {
+      label: "Coverage level"
+      url: "@{drill_1}"
+    }
+    link: {
+      label: "Policy Level"
+      url: "@{drill_1}"
+    }
+  }
+  measure: sum_drill_measure_3 {
+    type: sum
+    sql:  ${facial_coverings} ;;
+    link: {
+      label: "Account Level"
+      url: "@{drill_1}"
+    }
+    link: {
+      label: "Coverage level"
+      url: "@{drill_1}"
+    }
+    link: {
+      label: "Policy Level"
+      url: "@{drill_1}"
+    }
+  }
+  measure: sum_drill_measure_4 {
+    type: sum
+    sql:  ${facial_coverings} ;;
+    link: {
+      label: "Account Level"
+      url: "@{drill_1}"
+    }
+    link: {
+      label: "Coverage level"
+      url: "@{drill_1}"
+    }
+    link: {
+      label: "Policy Level"
+      url: "@{drill_1}"
+    }
+  }
+  measure: sum_drill_measure_5 {
+    type: sum
+    sql:  ${facial_coverings} ;;
+    link: {
+      label: "Account Level"
+      url: "@{drill_1}"
+    }
+    link: {
+      label: "Coverage level"
+      url: "@{drill_1}"
+    }
+    link: {
+      label: "Policy Level"
+      url: "@{drill_1}"
+    }
+  }
+  measure: sum_drill_measure_6 {
+    type: sum
+    sql:  ${facial_coverings} ;;
+    link: {
+      label: "Account Level"
+      url: "@{drill_1}"
+    }
+    link: {
+      label: "Coverage level"
+      url: "@{drill_1}"
+    }
+    link: {
+      label: "Policy Level"
+      url: "@{drill_1}"
+    }
+  }
+  measure: sum_drill_measure_7 {
+    type: sum
+    sql:  ${facial_coverings} ;;
+    link: {
+      label: "Account Level"
+      url: "@{drill_1}"
+    }
+    link: {
+      label: "Coverage level"
+      url: "@{drill_1}"
+    }
+    link: {
+      label: "Policy Level"
+      url: "@{drill_1}"
+    }
+  }
+  measure: sum_drill_measure_8 {
+    type: sum
+    sql:  ${facial_coverings} ;;
+    link: {
+      label: "Account Level"
+      url: "@{drill_1}"
+    }
+    link: {
+      label: "Coverage level"
+      url: "@{drill_1}"
+    }
+    link: {
+      label: "Policy Level"
+      url: "@{drill_1}"
+    }
+  }
+  measure: sum_drill_measure_9 {
+    type: sum
+    sql:  ${facial_coverings} ;;
+    link: {
+      label: "Account Level"
+      url: "@{drill_1}"
+    }
+    link: {
+      label: "Coverage level"
+      url: "@{drill_1}"
+    }
+    link: {
+      label: "Policy Level"
+      url: "@{drill_1}"
+    }
+  }
+  measure: sum_drill_measure_10 {
+    type: sum
+    sql:  ${facial_coverings} ;;
+    link: {
+      label: "Account Level"
+      url: "@{drill_1}"
+    }
+    link: {
+      label: "Coverage level"
+      url: "@{drill_1}"
+    }
+    link: {
+      label: "Policy Level"
+      url: "@{drill_1}"
+    }
+  }
+  measure: sum_drill_measure_11 {
+    type: sum
+    sql:  ${facial_coverings} ;;
+    link: {
+      label: "Account Level"
+      url: "@{drill_1}"
+    }
+    link: {
+      label: "Coverage level"
+      url: "@{drill_1}"
+    }
+    link: {
+      label: "Policy Level"
+      url: "@{drill_1}"
+    }
+  }
+  measure: sum_drill_measure_12 {
+    type: sum
+    sql:  ${facial_coverings} ;;
+    link: {
+      label: "Account Level"
+      url: "@{drill_1}"
+    }
+    link: {
+      label: "Coverage level"
+      url: "@{drill_1}"
+    }
+    link: {
+      label: "Policy Level"
+      url: "@{drill_1}"
+    }
+  }
+  measure: sum_drill_measure_13 {
+    type: sum
+    sql:  ${facial_coverings} ;;
+    link: {
+      label: "Account Level"
+      url: "@{drill_1}"
+    }
+    link: {
+      label: "Coverage level"
+      url: "@{drill_1}"
+    }
+    link: {
+      label: "Policy Level"
+      url: "@{drill_1}"
+    }
+  }
+
+  measure: sum_no_drill_measure_1 {
+    type: sum
+    sql:  ${facial_coverings} ;;
+  }
+  measure: sum_no_drill_measure_2 {
+    type: sum
+    sql:  ${facial_coverings} ;;
+  }
+  measure: sum_no_drill_measure_3 {
+    type: sum
+    sql:  ${facial_coverings} ;;
+  }
+  measure: sum_no_drill_measure_4 {
+    type: sum
+    sql:  ${facial_coverings} ;;
+  }
+  measure: sum_no_drill_measure_5 {
+    type: sum
+    sql:  ${facial_coverings} ;;
+  }
+  measure: sum_no_drill_measure_6 {
+    type: sum
+    sql:  ${facial_coverings} ;;
+  }
+  measure: sum_no_drill_measure_7 {
+    type: sum
+    sql:  ${facial_coverings} ;;
+  }
+  measure: sum_no_drill_measure_8 {
+    type: sum
+    sql:  ${facial_coverings} ;;
+  }
+  measure: sum_no_drill_measure_9 {
+    type: sum
+    sql:  ${facial_coverings} ;;
+  }
+  measure: sum_no_drill_measure_10 {
+    type: sum
+    sql:  ${facial_coverings} ;;
+  }
+  measure: sum_no_drill_measure_11 {
+    type: sum
+    sql:  ${facial_coverings} ;;
+  }
+  measure: sum_no_drill_measure_12 {
+    type: sum
+    sql:  ${facial_coverings} ;;
+  }
+  measure: sum_no_drill_measure_13 {
+    type: sum
+    sql:  ${facial_coverings} ;;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   dimension: fiscal_measures {
     type: number
     sql: ${TABLE}.fiscal_measures ;;
