@@ -94,6 +94,7 @@ view: covid19_open_data {
     type: yesno
     sql: ${country_name} LIKE 'An%' ;;
   }
+
   dimension: cumulative_confirmed {
     type: number
     sql: ${TABLE}.cumulative_confirmed ;;
