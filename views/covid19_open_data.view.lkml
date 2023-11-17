@@ -89,6 +89,11 @@ view: covid19_open_data {
     type: string
     sql: ${TABLE}.country_name ;;
   }
+
+  dimension: yesno_filed_test {
+    type: yesno
+    sql: ${country_name} LIKE 'An%' ;;
+  }
   dimension: cumulative_confirmed {
     type: number
     sql: ${TABLE}.cumulative_confirmed ;;
@@ -454,8 +459,7 @@ view: covid19_open_data {
     sql: ${TABLE}.current_ventilator_patients ;;
   }
   dimension: datacommons_id {
-    type: string
-    sql: ${TABLE}.datacommons_id ;;
+    sql: JSON_EXTRACT_ARRAY(${TABLE}.datacommons_id) ;;
   }
   dimension_group: date {
     type: time
@@ -491,19 +495,8 @@ view: covid19_open_data {
 
   measure: sum_drill_measure_1 {
     type: sum
-    sql:  ${facial_coverings} ;;
-      link: {
-        label: "Account Level"
-        url: "@{drill_1}"
-      }
-      link: {
-        label: "Coverage level"
-        url: "@{drill_1}"
-      }
-      link: {
-        label: "Policy Level"
-        url: "@{drill_1}"
-      }
+    sql:  (SELECT SUM(facial_coverings) FROM UNNEST(${datacommons_id}));;
+
   }
   measure: sum_drill_measure_2 {
     type: sum
